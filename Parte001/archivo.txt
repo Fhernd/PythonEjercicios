@@ -1,0 +1,2 @@
+Este es el contenido de un archivo de texto plano.
+Escrito desde Visual Studio Code.

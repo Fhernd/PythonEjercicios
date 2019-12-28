@@ -1,0 +1,27 @@
+{
+    "ides": [
+        "Visual Studio",
+        "Eclipse IDE",
+        "NetBeans IDE",
+        "PyCharm",
+        "PhpStorm"
+    ],
+    "lenguajes": [
+        {
+            "nombre": "Python",
+            "version": "3.8.0"
+        },
+        {
+            "nombre": "Java",
+            "version": "12"
+        },
+        {
+            "nombre": "JavaScript",
+            "version": "ES6"
+        },
+        {
+            "nombre": "PHP",
+            "version": "7.1.2"
+        }
+    ]
+}
