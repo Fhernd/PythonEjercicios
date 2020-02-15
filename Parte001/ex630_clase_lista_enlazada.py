@@ -20,3 +20,27 @@ class ListaEnlazada:
         else:
             self.cabeza = nodo
             self.cola = nodo
+    
+    def iterar(self):
+        actual = self.cola
+
+        while actual:
+            dato = actual.dato
+            actual = actual.siguiente
+            yield dato
+
+
+numeros = ListaEnlazada()
+numeros.insertar(2)
+numeros.insertar(3)
+
+for d in numeros.iterar():
+    print(d)
+
+print()
+
+numeros.insertar(5)
+numeros.insertar(7)
+
+for d in numeros.iterar():
+    print(d)
