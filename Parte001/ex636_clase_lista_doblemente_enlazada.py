@@ -12,3 +12,15 @@ class ListaDoblementeEnlazada(object):
         self.cola = None
         self.contador = 0
     
+    def insertar(self, dato):
+        nodo = Nodo(dato)
+
+        if self.cabeza is None:
+            self.cabeza = nodo
+            self.cola = self.cabeza
+        else:
+            nodo.anterior = self.cola
+            self.cola.siguiente = nodo
+            self.cola = nodo
+        
+        self.contador += 1
