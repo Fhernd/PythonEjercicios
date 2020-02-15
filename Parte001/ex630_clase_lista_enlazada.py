@@ -11,3 +11,12 @@ class ListaEnlazada:
         self.cabeza = None
         self.cola = None
         self.tamagnio = 0
+    
+    def insertar(self, dato):
+        nodo = Nodo(dato)
+        if self.cabeza:
+            self.cabeza.siguiente = nodo
+            self.cabeza = nodo
+        else:
+            self.cabeza = nodo
+            self.cola = nodo
