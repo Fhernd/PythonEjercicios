@@ -24,3 +24,31 @@ class ListaDoblementeEnlazada(object):
             self.cola = nodo
         
         self.contador += 1
+    
+    def iterar(self):
+        actual = self.cabeza
+
+        while actual:
+            dato = actual.dato
+            actual = actual.siguiente
+            yield dato
+
+
+numeros = ListaDoblementeEnlazada()
+print('Cantidad después de crear la lista:', numeros.contador)
+numeros.insertar(2)
+print('Cantidad después de insertar un elemento en la lista:', numeros.contador)
+
+print()
+
+numeros.insertar(3)
+numeros.insertar(5)
+numeros.insertar(7)
+numeros.insertar(11)
+
+print('Cantidad actual de elementos:', numeros.contador)
+
+print()
+
+for d in numeros.iterar():
+    print(d)
