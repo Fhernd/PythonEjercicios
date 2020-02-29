@@ -1,4 +1,4 @@
-# Ejercicio 708: Crear una clase personalizada para cálculos básicos sobre un rectangulo.
+# Ejercicio 708: Crear una clase personalizada para cálculos básicos sobre un rectángulo.
 
 class Rectangulo:
     def __init__(self, ancho, alto):
