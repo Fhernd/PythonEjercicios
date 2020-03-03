@@ -1,4 +1,4 @@
-# Ejercicio 546: Crear una función para determinar si un número es perfecto.nny
+# Ejercicio 546: Crear una función para determinar si un número es perfecto.
 
 # 6 -> 1, 2, 3 => 1 + 2 + 3 = 6
 # 28 -> 1 + 2 + 4 + 7 + 14 = 28
