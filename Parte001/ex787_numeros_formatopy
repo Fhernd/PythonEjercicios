@@ -1,0 +1,16 @@
+# Ejercicio 787: Usar especificadores de formato para valores numéricos.
+
+entero = 29
+real = 3.141592653589793
+
+# Mecanismo tradicional para especificadores formato:
+print('%d' % entero)
+print('%f' % real)
+print('%.10f' % real)
+
+print()
+
+# Mecanismo nuevo para especificadores de formato:
+print('{:d}'.format(entero))
+print('{:f}'.format(real))
+print('{:.10f}'.format(real))
