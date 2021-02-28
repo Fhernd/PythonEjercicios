@@ -10,9 +10,9 @@ suma = []
 
 # [12, 15, 18]
 
-for i in range(len(matriz)):
+for j in range(len(matriz[0])):
     suma_columna = 0
-    for j in range(len(matriz[0])):
+    for i in range(len(matriz)):
         suma_columna += matriz[i][j]
 
     suma.append(suma_columna)
