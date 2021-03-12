@@ -1,4 +1,4 @@
-# Ejerciciio 1035: Definir una jerarquía de herencia a partir de la clase Thread para crear un reloj.
+# Ejercicio 1035: Definir una jerarquía de herencia a partir de la clase Thread para crear un reloj.
 
 import datetime
 import threading
