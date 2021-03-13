@@ -21,4 +21,13 @@
 
 # ...
 
+if __name__ == '__main__':
+    a = int(input())
+    b = int(input())
+    
+    integer_division = a // b
+    real_division = a / b
+    
+    print(integer_division)
+    print(real_division)
 
