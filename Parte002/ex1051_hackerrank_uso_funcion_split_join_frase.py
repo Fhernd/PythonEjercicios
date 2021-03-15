@@ -1,0 +1,1 @@
+# Ejercicio 1051: HackerRank Particionar una cadena con la función split(), y unirla con join.
