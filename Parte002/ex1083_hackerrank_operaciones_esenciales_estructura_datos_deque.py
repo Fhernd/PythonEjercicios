@@ -11,4 +11,40 @@
 
 # ...
 
+from collections import deque
 
+def execute_methods(methods):
+    d = deque()
+    
+    for m in methods:
+        method_name = m[0]
+        
+        if method_name == 'append':
+            value = int(m[1])
+            d.append(value)
+        elif method_name == 'appendleft':
+            value = int(m[1])
+            d.appendleft(value)
+        elif method_name == 'pop':
+            if len(d):
+                d.pop()
+        elif method_name == 'popleft':
+            if len(d):
+                d.popleft()
+        elif method_name == 'clear':
+            d.popleft()
+    
+    return d
+
+if __name__ == '__main__':
+    n = int(input())
+    
+    methods = []
+    
+    for _ in range(n):
+        methods.append(input().split())
+    
+    result = execute_methods(methods)
+    
+    for v in result:
+        print(v, end=' ')
