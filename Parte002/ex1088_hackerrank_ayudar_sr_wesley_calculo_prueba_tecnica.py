@@ -12,3 +12,25 @@
 # 2. Column names are ID, MARKS, CLASS and NAME. (The spelling and case type of these names won't change.)
 
 # ...
+
+from collections import namedtuple
+import re
+
+if __name__ == '__main__':
+    n = int(input())
+    
+    columns = ','.join(input().split())
+    
+
+    Student = namedtuple('Student', columns)
+    
+    students = []
+    
+    for _ in range(n):
+        data = input().split()
+        students.append(Student(*data))
+    
+    marks = [int(getattr(s, 'MARKS')) for s in students]
+    result = sum(marks) / len(marks)
+    
+    print('{:.2f}'.format(result))
