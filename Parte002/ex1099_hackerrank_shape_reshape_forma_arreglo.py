@@ -7,4 +7,12 @@
 
 # ...
 
+import numpy as np
 
+if __name__ == '__main__':
+    lista_numeros = list(map(int, input().split()))
+
+    arreglo_numeros = np.array(lista_numeros)
+
+    arreglo_numeros.shape = (3, 3)
+    print(arreglo_numeros)
