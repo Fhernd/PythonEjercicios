@@ -15,10 +15,12 @@
 import re
 
 def is_valid_uid(test_case: str) -> bool:
-    pass
+    pattern = r'^(?=(?:[a-z\d]*[A-Z]){2})(?=(?:\D*\d){3})(?:([a-zA-Z\d])(?!.*\1)){10}$'
+    
+    return re.search(pattern, test_case)
 
 if __name__ == '__main__':
     tests = [input() for _ in range(int(input()))]
     
     for t in tests:
-        print(is_valid_uid(t))
+        print('Valid' if is_valid_uid(t) else 'Invalid')
