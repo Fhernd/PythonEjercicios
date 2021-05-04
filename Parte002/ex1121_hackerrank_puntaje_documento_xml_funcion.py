@@ -15,8 +15,12 @@ import xml.etree.ElementTree as etree
 
 
 def get_attr_number(node):
-    # your code goes here
-    pass
+    total = 0
+    
+    for e in node.iter():
+        total += len(e.attrib)
+    
+    return total
 
 
 if __name__ == '__main__':
