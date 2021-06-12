@@ -11,7 +11,7 @@ from fractions import Fraction
 from functools import reduce
 
 def product(fracs):
-    t = # complete this line with a reduce statement
+    t = reduce(lambda f1, f2: f1 * f2, fracs)
     return t.numerator, t.denominator
 
 if __name__ == '__main__':
