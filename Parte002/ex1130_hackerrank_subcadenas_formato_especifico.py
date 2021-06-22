@@ -9,9 +9,20 @@
 
 # ...
 
+from collections import OrderedDict
+
+
+def particionar_texto(text, k):
+    return [text[i: i + k] for i in range(0, len(text), k)]
+
+
 def merge_the_tools(string, k):
     # your code goes here
-    pass
+    particiones = particionar_texto(string, k)
+    
+    for p in particiones:
+        print(''.join(OrderedDict.fromkeys(p)))
+
 
 if __name__ == '__main__':
     string, k = input(), int(input())
