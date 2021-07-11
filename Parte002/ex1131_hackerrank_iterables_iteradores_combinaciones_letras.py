@@ -14,7 +14,7 @@ if __name__ == '__main__':
     letters = ''.join(input().split(' '))
     k = int(input())
     
-    indexes = list(range(1, len('aacd') + 1))
+    indexes = list(range(1, len(letters) + 1))
     total = 0
     indexes_chars = list(range(1, k + 1))
     
@@ -22,8 +22,9 @@ if __name__ == '__main__':
 
     for c in combinaciones:
         for d in c:
-            if d in indexes_chars:
+            if letters[d - 1] == 'a':
                 total += 1
                 break
     
     print('{:.3f}'.format(total/len(combinaciones)))
+
