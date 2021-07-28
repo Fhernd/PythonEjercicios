@@ -4,7 +4,6 @@
 # (such as age, height, weight and so on). You are required to sort the data based on the th 
 # attribute and print the final resulting table. Follow the example given below for better understanding.
 
-
 import math
 import os
 import random
@@ -26,3 +25,8 @@ if __name__ == '__main__':
         arr.append(list(map(int, input().rstrip().split())))
 
     k = int(input())
+    
+    result = sorted(arr, key=lambda r: r[k])
+    
+    for r in result:
+        print(' '.join(str(e) for e in r))
