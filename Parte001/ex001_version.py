@@ -2,6 +2,11 @@
 
 import sys
 
-print(sys.version)
+def mostrar_version():
+    print("Versión de Python instalada:")
+    print(sys.version)
+    print("\nInformación detallada:")
+    print(sys.version_info)
 
-print(sys.version_info)
+if __name__ == "__main__":
+    mostrar_version()
